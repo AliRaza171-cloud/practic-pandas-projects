@@ -1,7 +1,8 @@
 import pandas as pd
 dd=pd.read_csv(r"C:\Users\hp\Desktop\practic pandas projects\students_performance.csv")
 print(dd)
-print("\n here we calculate total number of student")
+print("\n here we calculate total " \
+"number of student")
 print(dd['Name'].count())
 print("\n here we print how stundent are in each grade mean student per grade")
 grouped=dd.groupby('Grade')['StudentID'].count()
